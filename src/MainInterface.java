@@ -6,7 +6,6 @@ class MainInterface{
     public static String operS = System.getProperty("os.name").toLowerCase();
 
 
-    
     // system check methods props to https://www.mkyong.com/java/how-to-detect-os-in-java-systemgetpropertyosname/
     public static boolean isWindows() {
 		return (operS.indexOf("win") >= 0);
@@ -24,9 +23,13 @@ class MainInterface{
 		return (operS.indexOf("sunos") >= 0);
     }
     
-    
     public static void main(String[] args){
 
+        if(isWindows()){
+
+        } else if (isUnix()){
+            // I can test this on Ubuntu
+        }
     }
 
 
